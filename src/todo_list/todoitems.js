@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './todoitems.css';
 const Todolisttems = (props) => {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState([props]);
   const removeList = (id) => {
     const newTours = list.filter((item) => item.id !== id);
     setList(newTours);
-    alert();
+    console.log('work');
   };
 
   return (
