@@ -16,17 +16,14 @@ const HeaderTodo = (props) => {
 
     setNewTodo('');
   };
-  const id = (props) => {
-    props.onSaveTodoData(enteredTodo.id);
-   
-  };
+ 
   return (
     // <form id="myDIV" className="header" onClick={newElementHandler}>
     <form id="myDIV" className="header" onSubmit={submitHandler}>
       <h2>My To Do List</h2>
       <input
         type="text"
-        id={id}
+        id="id"
         value={enteredTodo}
         placeholder="Title..."
         onChange={titleChangeHandler}
