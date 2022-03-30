@@ -22,8 +22,8 @@ export default function App() {
     ]);
   };
   const removeItem = (id) => {
-    const newTours = todoItems.filter((item) => item.id !== id);
-    setTodoItems(newTours);
+    const newItems = todoItems.filter((item) => item.id !== id);
+    setTodoItems(newItems);
   };
   return (
     <div>

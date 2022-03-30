@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './todoitems.css';
 const Todolisttems = (props) => {
-  const [todoNames, setList] = useState([]);
-
   return (
     <li id={props.id}>
       {props.value}{' '}
