@@ -12,6 +12,9 @@ ul li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
