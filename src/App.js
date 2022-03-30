@@ -21,12 +21,15 @@ export default function App() {
       },
     ]);
   };
-  
+  const removeItem = (id) => {
+    const newTours = todoItems.filter((item) => item.id !== id);
+    setTodoItems(newTours);
+  };
   return (
     <div>
       <HeaderTodo onSaveTodoData={onSaveHandler} />
       <div>
-        <TodoListHolder todoNames={todoItems} />
+        <TodoListHolder removeItem={removeItem} todoNames={todoItems} />
       </div>
     </div>
   );

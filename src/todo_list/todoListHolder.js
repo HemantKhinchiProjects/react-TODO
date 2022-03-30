@@ -6,7 +6,12 @@ const TodoListHolder = (props) => {
   return (
     <ul id="myUL">
       {props.todoNames.map((item) => (
-        <Todolisttems value={item.name} key={item.id} id={item.id} />
+        <Todolisttems
+          value={item.name}
+          removeItem={props.removeItem}
+          key={item.id}
+          id={item.id}
+        />
       ))}
     </ul>
   );
